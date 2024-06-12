@@ -1,33 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" >
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" >
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
-    <meta name="description" content="ejercitación" >
-    <meta name="keywords" content="práctica" >
-    <meta name="author" content="Maximiliano Molina" >
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="ejercitación" />
+    <meta name="keywords" content="práctica" />
+    <meta name="author" content="Maximiliano Molina" />
+    <!-- CSS original
+    <link rel="stylesheet" href="styles/main.css" > -->
+    <!-- CSS propio -->
+    <link rel="stylesheet" href="styles/index.css" />
     <title>Document</title>
   </head>
   <body>
     <header>
-      <img src="images/Logo-Mighty-ducks-01.png" alt="" width="200" >
-      <h1>Mighty Ducks Hockey League</h1>
+      <div class="div2">
+        <img
+          src="images/Logo-Mighty-ducks-01.png"
+          alt=""
+          width="200"
+          id="logo"
+        />
+      </div>
+      <div class="div1">
+        <h1>Mighty Ducks Hockey League</h1>
+      </div>
     </header>
     <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html"> About MDHL</a>
-      <a href="contact.html">Contact</a>
+      <a class="buttom" href="index.html">Home</a>
+      <a class="buttom" href="./pages/about.html"> About MDHL</a>
+      <a class="buttom" href="./pages/contact.html">Contact</a>
     </nav>
-    <article>
-      <img src="images/hockey_1.jpg" alt="" width="600" >
-      <h2>Upcoming Events</h2>
-      <h3>August 4</h3>
-      <p>MDSL Fundraiser</p>
-      <h3>August 16</h3>
-      <p>Season Kick-off: Meet the Teams</p>
-      <h3>September 1</h3>
-      <p>First Game of the Season (Check Game Schedule for details)</p>
-    </article>
+    <main>
+      <article>
+        <img src="images/hockey_1.jpg" alt="niño judador de hockey" />
+        <h2>Upcoming Events</h2>
+        <h3>August 4</h3>
+        <p>MDSL Fundraiser</p>
+        <h3>August 16</h3>
+        <p>Season Kick-off: Meet the Teams</p>
+        <h3>September 1</h3>
+        <p>First Game of the Season (Check Game Schedule for details)</p>
+      </article>
+    </main>
   </body>
+  <footer>
+    <p>Hecho por Maximiliano Molina</p>
+  </footer>
 </html>

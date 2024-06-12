@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+#logo{
+    width: 90px;
+    border-radius: 212px;
+}
+main article p{
+    font-family: cursive;
+    background-color: chocolate;
+}
+h1 {
+  font-weight: 900;
+}
+header {
+  align-items: center;
+  background-color: white;
+}
+nav {
+  text-align: end;
+  margin: 19px 0px;
+}
+a {
+  background-color: green;
+  padding: 6px;
+  color: white;
+  border-radius: 12px;
+  text-decoration: none;
+  border: 3px solid yellow;
+  display: inline-block;
+  margin-right: 20px;
+  width: 110px;
+  height: 37px;
+  text-align: center;
+}
+a:hover{
+    background-color: yellow;
+    cursor: default;
+}
+a:active{
+    background-color: red;
+}
+h1:hover{
+    font-size: 100px;
+}
