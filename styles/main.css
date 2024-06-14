@@ -2,45 +2,116 @@
   margin: 0;
   padding: 0;
 }
-#logo{
-    width: 90px;
-    border-radius: 212px;
+
+body::before {
+  content: "";
+  background: url(../Images/hockey_3.jpg) no-repeat center center;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5; /* Cambia este valor para ajustar la opacidad */
+  z-index: -1;
 }
-main article p{
-    font-family: cursive;
-    background-color: chocolate;
-}
-h1 {
-  font-weight: 900;
+
+.content {
+  position: relative;
+  z-index: 1;
+  color: white; /* Puedes ajustar el color del texto según sea necesario */
+  padding: 20px;
+
 }
 header {
-  align-items: center;
-  background-color: white;
+  text-align: center;
+  background-color: #C64832;
+  font-size: 30px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
+  color: #ffdf63;
+  margin-bottom: 10px;
 }
+aside {
+text-align: center;
+}
+aside img {
+  height: 60vh;
+}
+.logo {
+  transition: all 1s;
+}
+.logo:hover {
+  transform: rotateY(180deg);
+}
+
 nav {
-  text-align: end;
-  margin: 19px 0px;
+  text-align: center;
+  margin-top: 30px;
 }
-a {
-  background-color: green;
-  padding: 6px;
-  color: white;
-  border-radius: 12px;
+nav a {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 30px;
   text-decoration: none;
-  border: 3px solid yellow;
+  color: aliceblue;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
+    background-color: #211915;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 5px;
+}
+.buttom{
   display: inline-block;
+  transition: transform 0.3s;
+}
+.buttom:hover{
+  background-color: #5FA199;
+  transform: scale(1.3);
+}
+h2{
+  text-align: center;
+  font-size: 60px;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  position: relative;
+  top: 490px;
+  color: red;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 3px 0 #000,
+    1px 1px 0 #000;
+}
+section{
+  text-align: center;
+  margin-top: 40px;
+}
+section h4{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 30px;
+}
+section p{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+  padding: 10px;
+}
+footer{
+  background-color:#5FA199;
+  height: 60px;
+}
+footer p{
+  text-align: end;
+  position: relative;
+  top: 40px;
   margin-right: 20px;
-  width: 110px;
-  height: 37px;
+}
+.iconos{
   text-align: center;
 }
-a:hover{
-    background-color: yellow;
-    cursor: default;
+.iconos i{
+  width: 30px;
+  margin-top: 10px;
 }
-a:active{
-    background-color: red;
-}
-h1:hover{
-    font-size: 100px;
+.redes{
+font-size: 30px;
+margin: 10px;
+
 }
