@@ -40,10 +40,11 @@ h2 {
     1px 1px 0 #000;
 }
 aside {
-  display: inline-block;
+  display: flex;
+  justify-content: center;
 }
 aside img {
-  height: 30vh;
+  height: 80vh;
 }
 .logo {
   transition: all 1s;
@@ -109,4 +110,17 @@ footer {
   color: lightblue;
   text-align: end;
   height: 30px;
+}
+.textHome{
+  text-align: center;
+  color: aliceblue;
+}
+.textHome h4{
+  font-size: 40px;
+  background-color: red;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+  1px 1px 0 #000;
+}
+.textHome P{
+  color: black;
 }

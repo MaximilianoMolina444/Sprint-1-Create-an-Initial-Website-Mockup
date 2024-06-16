@@ -21,11 +21,10 @@ body::before {
   z-index: 1;
   color: white; /* Puedes ajustar el color del texto según sea necesario */
   padding: 20px;
-
 }
 header {
   text-align: center;
-  background-color: #C64832;
+  background-color: #c64832;
   font-size: 30px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
@@ -34,7 +33,7 @@ header {
   margin-bottom: 10px;
 }
 aside {
-text-align: center;
+  text-align: center;
 }
 aside img {
   height: 60vh;
@@ -48,7 +47,7 @@ aside img {
 
 nav {
   text-align: center;
-  margin-top: 30px;
+  margin-top: 10px;
 }
 nav a {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -57,20 +56,20 @@ nav a {
   color: aliceblue;
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
     1px 1px 0 #000;
-    background-color: #211915;
-    border-radius: 5px;
-    margin: 10px;
-    padding: 5px;
+  background-color: #211915;
+  border-radius: 5px;
+  margin: 10px;
+  padding: 5px;
 }
-.buttom{
+.buttom {
   display: inline-block;
   transition: transform 0.3s;
 }
-.buttom:hover{
-  background-color: #5FA199;
+.buttom:hover {
+  background-color: #5fa199;
   transform: scale(1.3);
 }
-h2{
+h2 {
   text-align: center;
   font-size: 60px;
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
@@ -80,38 +79,172 @@ h2{
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 3px 0 #000,
     1px 1px 0 #000;
 }
-section{
-  text-align: center;
+section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: space-between;
+  align-content: space-between;
   margin-top: 40px;
 }
-section h4{
+section h4 {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 30px;
 }
-section p{
+section p {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 20px;
   padding: 10px;
 }
-footer{
-  background-color:#5FA199;
+footer {
+  background-color: #5fa199;
+  margin-top: 30px;
   height: 60px;
 }
-footer p{
+footer p {
   text-align: end;
   position: relative;
   top: 40px;
   margin-right: 20px;
 }
-.iconos{
+.iconos {
   text-align: center;
 }
-.iconos i{
+.iconos i {
   width: 30px;
   margin-top: 10px;
 }
-.redes{
-font-size: 30px;
-margin: 10px;
+.redes {
+  font-size: 30px;
+  margin: 10px;
+}
+.cardsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  justify-content: space-between;
+}
+/* .cards{
+  width: 440px;
+  height: 450px;
+  margin: 4px;
+} */
+.cardsContainer div {
+  margin: 10px;
+  width: 450px;
+  background-color: #c64832;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  border: 1px solid black;
+}
+.cardsText {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 900;
+  text-align: center;
+}
+/* prueba */
+.card {
+  --bg: #f7f7f8;
+  --hover-bg: #ffe5f4;
+  --hover-text: black;
+  max-width: 440px;
+  height: 790px;
+  margin: 90px;
+  text-align: center;
+  background: var(--bg);
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+  transition: 0.3s cubic-bezier(0.6, 0.4, 0, 1), transform 0.15s ease;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  border-radius: 52px 0px 54px 0px;
+  -webkit-border-radius: 52px 0px 54px 0px;
+  -moz-border-radius: 52px 0px 54px 0px;
+}
 
+.card__body {
+  color: #162eb1;
+  line-height: 1.5em;
+  font-size: 1em;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.card > :not(span) {
+  transition: 0.6s cubic-bezier(0.6, 0.4, 0, 1);
+}
+
+.card > strong {
+  display: block;
+  font-size: 3rem;
+  letter-spacing: -0.035em;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.card span {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--hover-text);
+  border-radius: 5px;
+  font-weight: bold;
+  top: 100%;
+  transition: all 0.3s cubic-bezier(0.6, 0.4, 0, 1);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.card:hover span {
+  top: 0;
+  font-size: 2em;
+}
+
+.card:hover {
+  background: var(--hover-bg);
+}
+
+.card:hover > div,
+.card:hover > strong {
+  opacity: 0;
+}
+.cards {
+  width: 500px;
+  height: 450px;
+  margin: 10px;
+  border-radius: 200px 10px 88px 10px;
+  -webkit-border-radius: 200px 10px 88px 10px;
+  -moz-border-radius: 200px 10px 88px 10px;
+}
+/* fin de prueba */
+.textHome {
+  text-align: center;
+  margin-top: 40px;
+  padding-bottom: 10px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: rgb(15, 15, 15);
+}
+.textHome h4 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 30px;
+}
+.textHome p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+  padding: 10px;
+}
+.textAbout{
+  font-size: 30px;
+}
+.email{
+  font-size: 40px;
 }
