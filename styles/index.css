@@ -25,6 +25,10 @@ header h1 {
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
     1px 1px 0 #000;
 }
+a{
+  text-decoration: none;
+  color: #f7f7f8;
+}
 h2 {
   font-size: 40px;
   font-weight: bold;
@@ -38,6 +42,19 @@ h2 {
   color: azure;
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
     1px 1px 0 #000;
+}
+.titles {
+  display: inline-block;
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  background-color: red;
+  line-height: 10vh;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: azure;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
+  border-radius: 20px;
 }
 aside {
   display: flex;
@@ -53,18 +70,27 @@ aside img {
   transform: rotateY(180deg);
 }
 section {
-  display: inline-block;
-  vertical-align: top;
-  margin-left: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: space-between;
+  align-content: space-between;
+  margin-top: 40px;
 }
 section h3 {
+  text-align: center;
   font-size: 30px;
   padding-bottom: 10px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 40px;
+  background-color: red;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
 }
 section p {
-  padding-bottom: 10px;
+  padding-bottom: 15px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 25px;
 }
 nav {
   text-align: end;
@@ -111,16 +137,149 @@ footer {
   text-align: end;
   height: 30px;
 }
-.textHome{
+.textHome {
   text-align: center;
   color: aliceblue;
 }
-.textHome h4{
+.textHome h4 {
   font-size: 40px;
   background-color: red;
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
-  1px 1px 0 #000;
+    1px 1px 0 #000;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-.textHome P{
+.textHome P {
   color: black;
+  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+.textAbout {
+  font-size: 50px;
+  font-weight: bold;
+  text-align: center;
+  background-color: red;
+  line-height: 7vh;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: azure;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
+  margin: 20px;
+  border-radius: 20px;
+  padding: 2px;
+}
+footer {
+  background-color: red;
+  margin-top: 30px;
+  height: 80px;
+}
+footer p {
+  text-align: end;
+  position: relative;
+  top: 40px;
+  margin-right: 20px;
+}
+.iconos {
+  text-align: center;
+}
+.iconos i {
+  width: 30px;
+}
+.redes {
+  font-size: 30px;
+  margin: 10px;
+}
+.cardsContainer div {
+  margin: 10px;
+  width: 450px;
+  background-color: #c64832;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  border: 1px solid black;
+}
+.cardsText {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 900;
+  text-align: center;
+}
+.card {
+  --bg: #f7f7f8;
+  --hover-bg: #ffe5f4;
+  --hover-text: black;
+  max-width: 440px;
+  height: 790px;
+  margin: 90px;
+  text-align: center;
+  background: var(--bg);
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+  transition: 0.3s cubic-bezier(0.6, 0.4, 0, 1), transform 0.15s ease;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  border-radius: 52px 0px 54px 0px;
+  -webkit-border-radius: 52px 0px 54px 0px;
+  -moz-border-radius: 52px 0px 54px 0px;
+}
+
+.card__body {
+  color: #162eb1;
+  line-height: 1.5em;
+  font-size: 1em;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.card > :not(span) {
+  transition: 0.6s cubic-bezier(0.6, 0.4, 0, 1);
+}
+
+.card > strong {
+  display: block;
+  font-size: 3rem;
+  letter-spacing: -0.035em;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.card span {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--hover-text);
+  border-radius: 5px;
+  font-weight: bold;
+  top: 100%;
+  transition: all 0.3s cubic-bezier(0.6, 0.4, 0, 1);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.card:hover span {
+  top: 0;
+  font-size: 2em;
+}
+
+.card:hover {
+  background: var(--hover-bg);
+}
+
+.card:hover > div,
+.card:hover > strong {
+  opacity: 0;
+}
+.cards {
+  width: 500px;
+  height: 450px;
+  margin: 10px;
+  border-radius: 200px 10px 88px 10px;
+  -webkit-border-radius: 200px 10px 88px 10px;
+}
+

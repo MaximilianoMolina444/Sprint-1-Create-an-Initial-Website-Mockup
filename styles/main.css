@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body::before {
@@ -12,17 +13,22 @@ body::before {
   left: 0;
   width: 100%;
   height: 100%;
-  opacity: 0.5; /* Cambia este valor para ajustar la opacidad */
+  opacity: 0.5;
   z-index: -1;
 }
-
+h3 {
+  text-align: center;
+  padding: 15px;
+  font-size: 40px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 .content {
   position: relative;
   z-index: 1;
-  color: white; /* Puedes ajustar el color del texto según sea necesario */
+  color: white;
   padding: 20px;
 }
-header {
+header h1 {
   text-align: center;
   background-color: #c64832;
   font-size: 30px;
@@ -36,7 +42,7 @@ aside {
   text-align: center;
 }
 aside img {
-  height: 60vh;
+  height: 400px;
 }
 .logo {
   transition: all 1s;
@@ -44,37 +50,18 @@ aside img {
 .logo:hover {
   transform: rotateY(180deg);
 }
-
-nav {
-  text-align: center;
-  margin-top: 10px;
-}
-nav a {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 30px;
-  text-decoration: none;
-  color: aliceblue;
-  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
-    1px 1px 0 #000;
-  background-color: #211915;
-  border-radius: 5px;
-  margin: 10px;
-  padding: 5px;
-}
 .buttom {
   display: inline-block;
   transition: transform 0.3s;
 }
 .buttom:hover {
   background-color: #5fa199;
-  transform: scale(1.3);
+  transform: scale(1);
 }
 h2 {
   text-align: center;
   font-size: 60px;
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-  position: relative;
-  top: 490px;
   color: red;
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 3px 0 #000,
     1px 1px 0 #000;
@@ -86,6 +73,7 @@ section {
   align-content: space-between;
   align-content: space-between;
   margin-top: 40px;
+  background-color: #f5f5f5a9;
 }
 section h4 {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -96,17 +84,25 @@ section p {
   font-size: 20px;
   padding: 10px;
 }
-footer {
-  background-color: #5fa199;
-  margin-top: 30px;
-  height: 60px;
+table {
+  width: 100%;
+  height: 100%;
+  border-collapse: collapse;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+  margin: 10px;
 }
-footer p {
-  text-align: end;
-  position: relative;
-  top: 40px;
-  margin-right: 20px;
+tr,
+td,
+th {
+  border: 5px solid black;
 }
+th,
+td {
+  padding: 10px;
+  text-align: center;
+}
+
 .iconos {
   text-align: center;
 }
@@ -124,14 +120,9 @@ footer p {
   justify-content: center;
   justify-content: space-between;
 }
-/* .cards{
-  width: 440px;
-  height: 450px;
-  margin: 4px;
-} */
 .cardsContainer div {
   margin: 10px;
-  width: 450px;
+  width: 250px;
   background-color: #c64832;
   display: flex;
   flex-wrap: wrap;
@@ -140,20 +131,18 @@ footer p {
 }
 .cardsText {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-weight: 900;
+  font-weight: 20px;
   text-align: center;
 }
-/* prueba */
 .card {
-  --bg: #f7f7f8;
+  --bg: #dbd7d7;
   --hover-bg: #ffe5f4;
   --hover-text: black;
-  max-width: 440px;
-  height: 790px;
-  margin: 90px;
+  max-width: 330px;
+  height: 450px;
+  margin: 20px;
   text-align: center;
   background: var(--bg);
-  border-radius: 5px;
   position: relative;
   overflow: hidden;
   transition: 0.3s cubic-bezier(0.6, 0.4, 0, 1), transform 0.15s ease;
@@ -165,9 +154,7 @@ footer p {
   box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-  border-radius: 52px 0px 54px 0px;
-  -webkit-border-radius: 52px 0px 54px 0px;
-  -moz-border-radius: 52px 0px 54px 0px;
+  border-radius: 4px;
 }
 
 .card__body {
@@ -183,7 +170,7 @@ footer p {
 
 .card > strong {
   display: block;
-  font-size: 3rem;
+  font-size: 2rem;
   letter-spacing: -0.035em;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -200,13 +187,13 @@ footer p {
   border-radius: 5px;
   font-weight: bold;
   top: 100%;
-  transition: all 0.3s cubic-bezier(0.6, 0.4, 0, 1);
+  transition: all 0.7s cubic-bezier(0.6, 0.4, 0, 1);
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .card:hover span {
   top: 0;
-  font-size: 2em;
+  font-size: 20px;
 }
 
 .card:hover {
@@ -218,14 +205,10 @@ footer p {
   opacity: 0;
 }
 .cards {
-  width: 500px;
-  height: 450px;
-  margin: 10px;
-  border-radius: 200px 10px 88px 10px;
-  -webkit-border-radius: 200px 10px 88px 10px;
-  -moz-border-radius: 200px 10px 88px 10px;
+  width: 300px;
+  height: 350px;
+  border: 5px solid black;
 }
-/* fin de prueba */
 .textHome {
   text-align: center;
   margin-top: 40px;
@@ -242,9 +225,152 @@ footer p {
   font-size: 20px;
   padding: 10px;
 }
-.textAbout{
+.textAbout {
   font-size: 30px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-.email{
+.email {
   font-size: 40px;
 }
+
+.titles {
+  font-size: 30px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1 {
+  text-align: center;
+  font-size: 48px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #222;
+}
+.menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 200vh;
+  height: 80px;
+  margin: auto;
+  position: relative;
+  background-color: #2c3e50;
+  z-index: 7;
+}
+.menu li {
+  text-align: center;
+  float: left;
+  width: 16%;
+  height: 100%;
+  margin-left: 3px;
+}
+.menu a {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-decoration: none;
+  position: relative;
+  font-size: 18px;
+  z-index: 9;
+}
+a.active {
+  background-color: red;
+  pointer-events: none;
+}
+li.slider {
+  display: none;
+  width: 25%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #2c3e50;
+  z-index: 8;
+  transition: left 0.4s;
+  background-color: 0.4s;
+}
+footer {
+  background-color: #5fa199;
+  height: 80px;
+  margin-top: 30px;
+}
+footer p {
+  text-align: end;
+}
+.iconos {
+  display: flex;
+  justify-content: center;
+}
+#footerGame {
+  margin-top: 400px;
+}
+.banner {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background-color: blue;
+  background: url(../Images/maurice-dt-cQ7X3AL1_LI-unsplash.jpg) no-repeat
+    center center;
+  height: 300px;
+  width: 100%;
+  background-size: cover;
+  padding-left: 700px;
+}
+
+.button-92 {
+  --c: #fff;
+
+  background: linear-gradient(90deg, #0000 33%, #fff5, #0000 67%)
+      var(--_p, 100%) / 300% no-repeat,
+    #c64832;
+
+  color: #0000;
+  border: none;
+  transform: perspective(500px) rotateY(calc(20deg * var(--_i, -1)));
+  text-shadow: calc(var(--_i, -1) * 0.08em) -0.01em 0 var(--c),
+    calc(var(--_i, -1) * -0.08em) 0.01em 2px #0004;
+  outline-offset: 0.1em;
+  transition: 0.3s;
+  height: 80px;
+  width: 300px;
+}
+
+.button-92:hover,
+.button-92:focus-visible {
+  --_p: 0%;
+  --_i: 1;
+}
+
+.button-92:active {
+  text-shadow: none;
+  color: var(--c);
+  box-shadow: inset 0 0 9e9q #0005;
+  transition: 0s;
+}
+
+.button-92 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  font-size: 1.8rem;
+  margin: 0;
+  cursor: pointer;
+  padding: 0.1em 0.3em;
+  text-decoration: none;
+  text-align: center;
+}
+#rules{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+#rules li{
+  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#rules h4{
+  align-self: center;
+  text-align: center;
+} 
